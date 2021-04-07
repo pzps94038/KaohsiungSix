@@ -1,0 +1,275 @@
+/* cssReset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* body */
+body{
+    background-color: rgb(247,247,247);
+}
+/* container */
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+/* top */
+.top{
+    position:fixed;    
+    right: 20px;
+    bottom: 10px;
+}
+/* header */
+.header{
+    background-image:url('https://upload.cc/i1/2021/04/07/IPV6aR.png');
+    background-size:1024px auto;
+    position: relative;
+    z-index: 5;
+}
+.title{
+    text-align:center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3.89px;
+    font-family: PingFangTC-Regular, sans-serif;
+    /* y軸x軸 */
+    padding: 89px 378.5px 96px 380.5px;    
+}
+.nav{
+    background: rgba(255,255,255,0.70);
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    width: 452px;
+    height: 48px;
+    margin: 0 279px 107px 293px;
+    font-family:AppleSystemUIFont;
+    font-size: 18px;    
+    line-height: 21px;
+    font-weight: 700;
+    background-image: url('https://upload.cc/i1/2021/04/07/tLIZXk.png');
+    background-repeat: no-repeat;
+    background-position:right 15px center;
+    -webkit-appearance: none;    
+}
+.nav:hover{
+    cursor: pointer;
+}
+.admin{
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    position:absolute;
+    width: 800px;
+    height: 112px;
+    left: 112px;
+    top: 352px;
+}
+.admin_title{
+    font-weight:700;
+    font-size: 18px;
+    color: #000000;
+    margin-left: 20px;
+    margin-top: 26px;
+}
+.admin_btn{
+    margin-left: 28px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+.admin_btn input{
+    margin-left:23px;
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    font-family: PingFangTC-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 0px solid transparent;
+}
+.admin_btn input:hover{
+    cursor: pointer;
+}
+#linya{
+    background-color: #8A82CC;
+}
+#linya:hover{
+    background-color: #6a61be;
+    box-shadow: 0px 0px 6px 3px #6a61be;
+}
+#sanmin{
+    background-color: #FFA782;
+}
+#sanmin:hover{
+    background-color: #f56c31;
+    box-shadow: 0px 0px 6px 3px #f56c31;
+}
+#sinsin{
+    background-color: #F5D005;
+}
+#sinsin:hover{
+    background-color: #f7dd68;
+    box-shadow: 0px 0px 6px 3px #f7dd68;
+}
+#yancheng{
+    background-color: #559AC8;
+}
+#yancheng:hover{
+    background-color: #1d7fc0;
+    box-shadow: 0px 0px 6px 3px #1d7fc0;
+}
+.box{
+    background-color: rgb(247,247,247);
+    height: 190px;
+}
+.box_img{
+    position:absolute;    
+    z-index:5;
+    top:501px;
+}
+/* content */
+.content{      
+    width: 1027px;    
+}
+.content h2{
+    color:#8A82CC;
+    font-size:36px;
+    text-align: center;
+    font-weight: 700;
+}
+/* card */
+.card{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 80px;    
+}/* 整個觀光資訊 */
+.card_item{
+    width: 464px;
+    height:273px;
+    margin-bottom: 36px;    
+}
+/* 資訊上半部 */
+.item_img{
+    width: 464px;
+    height: 155px;
+    position:relative;
+    overflow:hidden;
+}
+/* 資訊圖片 */
+.item_img img{   
+    max-width: 100%;       
+    position: absolute;    
+    margin: auto;   
+    z-index: 1;    
+    transform: scale(1,1);
+    object-position:50% -50px;  
+}
+.item_img img:hover{
+    transition: all 1s;
+    transform: scale(1.2,1.2);
+}
+/* 資訊文字 */
+.item_img_text{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 14px;      
+}
+.itemName{
+    font-family:SFNSDisplay;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 22px;    
+}
+.itemZone{
+    font-family: PingFangTC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-right: 19px;
+}
+/* 資訊下半部 */
+.item_cotent{
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.item_cotent img{
+    margin-left: 23px;
+    margin-right: 9px;
+    width: 18px;    
+}
+.tel{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.free{
+    margin-right: 16px;
+}
+/* footer */
+.footer{
+    background-color:#559AC8;
+    height: 66px;
+    text-align: center;
+    font-size: 14px;
+    font-family:AppleSystemUIFont;
+}
+.source{    
+    color: #FFFFFF;
+    padding-top: 24px;
+}
+.source_admin{    
+    color: #FFD366;
+}
